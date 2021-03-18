@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'BinggraeSamanco-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #faf1be;
+    color: black; 
+    font-family: 'BinggraeSamanco-Bold';
+    overflow: hidden;
+}
+
+.main-content{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.intro{
+    margin-top: 10%;
+    height: 100vh;
+
+
+}
+.title h1 {
+    animation: bounce-3 1s infinite;
+    font-size: 100px;
+}
+.title h3 {
+    font-size: 80px;
+    
+    }
+
+#span1{
+    font-size: 100px;
+    animation: pulse1 3s infinite;
+}
+#span2{
+    font-size: 100px;
+    animation: pulse2 3s infinite;
+
+}
+.open h3 {
+    font-size: 80px;
+    animation: blink 1s infinite ;
+}
+
+.gift-box img{
+    margin-top: 10px;
+    width: 100px;
+    height: auto;
+    animation:shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+
+.letter{
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.letter-title{
+  font-size: 80px;
+  text-align: left;
+  animation: bounce-3 1s infinite;
+   
+}
+
+.letter-body{
+
+text-align: left;
+font-size: 30px;
+border: black solid 1px;
+border-radius: 10px;
+
+}
+.letter-body span{
+  font-size: 40px;
+  color: #FF4136;
+  
+}
+.letter-footer{
+
+animation: shake 2s infinite;
+text-align: right;
+font-size: 50px;
+
+}
+
+
+
+
+@keyframes blink{
+
+    0%{opacity: 0;}
+
+    50%{opacity: .5;}
+
+    100%{opacity: 1;}
+}
+
+@keyframes bounce-3 {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-20px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  @keyframes pulse1 {
+    0% {
+      color:black;
+    }
+    50% {
+      color: #FF4136;
+    }
+    100%
+    {
+        color:black;
+    }
+  }
+  @keyframes pulse2{
+    0% {
+        color:#FF4136;
+      }
+      50% {
+        color: black;
+      }
+      100%
+      {
+          color: #FF4136;
+      }
+
+  }

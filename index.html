@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jisu B-day</title>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="main-content">
+        <div class="intro">
+            <div class="title">
+                <h1>이지수</h1>
+                <h3> 탄신일 </h3>
+                <span id="span1" style="color:crimson">축</span>
+                <span id="span2" style="color: darkred;">축 </span>
+            </div>
+
+            <div class="gift-box">
+
+                <img id="img" src="./giftbox.png">
+
+
+            </div>
+
+            <div class="open">
+                <h3>열어봐</h3>
+            </div>
+        </div>
+
+
+
+        <div class="letter">
+
+            <div class="letter-title">
+                <h1>지수에게  <span id="heart">💖</span> </h1>
+
+            </div>
+            <div class="letter-body">
+               <p> 
+                어떤 선물이 가장 뜻깊을까 <br>
+                하고 생각하다가<br>
+                이렇게 한번 만들어 봤엉.<br>
+                복잡하게 만든건 아니니께<br>
+                너무 부담갖지는 말구.<br>
+                원래 선물을 가구를 만들어서<br>
+                할까 하다가,<br>
+                누가 이미 선물로 해줬다고 해서,<br>
+                이런거는 <span>한번도</span><br>
+                못받아 봤을것같아서,<br>
+                함해봤엉ㅎㅎ<br>
+                생일 정말 축하하고,<br>
+                힘든시기에 같이 있어서 너무 고마워<br>
+                이지수 없으면 어쨌을까 몰라😆
+                
+                </p>
+            </div>
+            <div class="letter-footer">
+                <h2>Moon 2021.03.19</h2>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <script>
+        var audio = new Audio('bdaysong111.mp3');
+
+        document.getElementById('img').addEventListener("click", function () {
+
+            audio.play();
+        })
+    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    function down(){
+        const vheight = $('.intro').height(); 
+        $('html, body').animate({
+            
+            scrollTop: ((Math.floor($(window).scrollTop()/ vheight) + 1)* vheight)
+
+        })
+
+    }
+    $(function(){
+        $('#img').click(function(e){
+            e.preventDefault();
+            down();
+
+        })
+
+    });
+    $('html, body').animate({
+
+        scrollTop:0
+    })
+
+
+</script>
+
+</body>
+
+</html>
